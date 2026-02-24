@@ -1,0 +1,46 @@
+html, body {
+    font-family: sans-serif;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+.accordion {
+    border-bottom: solid 2px #bfbfbf;
+}
+
+.accordion summary {
+    color: #324054;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100;
+    display: flex;
+    padding: 32px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion p {
+    color: #324054;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.accordion:last-child p {
+    margin-bottom: 5px;
+}
+
+.accordion[open] summary {
+    padding-bottom: 16px;
+    color: #324054;
+}
+
+.accordion summary::marker {
+    display: none;
+}
