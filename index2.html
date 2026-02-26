@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu perfil</title>
 
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +16,25 @@
     <script src="./components.js" async></script>
 </head>
 <body>
-    <div class="full-center-center">
+    <header class="main-header">
+        <div class="main-header__left">
+            <img src="./imagens/IMG_0632 - cópia.PNG" alt="logo consultório">
+        </div>
+
+        <div class="main-header__right">
+            <a href="" onclick="openModal('modal'); return false">Abrir modal</a>
+        </div>
+    </header>
+    <div class="full-center-center full-center-center--margin-top">
         <div class="box box-avatar">
             <div class="box__avatar">                        
                 <img src="imagens/IMG_0244.jpg" alt="descricao da foto">
             </div>
-            <div class="profile">
-                <div class="profile__header box__header">
+            <div class="box__profile">
+                <div class="box__header">
                     <h1>Isabelle Albuquerque</h1>
                     <h2>Desenvolvimento full stack</h2>
-                    <div class="profile__about">
+                    <div class="box__about">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="destaque">In volutpat nisl facilisis nulla cursus faucibus.</span> Suspendisse posuere aliquet posuere.</p>
                     </div>    
                 </div>
@@ -33,7 +42,7 @@
             <div class="box__content">
                 <div class="view-more">
                     <div class="view-more__content">
-                        <ul class="links link-list">
+                        <ul class="links">
                                 <li>
                                     <a href="https://instagram.com" target="_blank">
                                         <span>&#128198;</span>
@@ -78,22 +87,68 @@
 
     <div class="full-center-center">
         <div class="box">
-            <div class="box__title">
+            <div class="box__title tooltip">
                 <img src="./imagens/images.jpeg" alt="emoji pensativo">
                 <h2>Perguntas Frequentes</h2>
+                <span class="tooltiptext">Tire suas dúvidas aqui</span>
             </div>
+
             <details class="accordion" open>
-                <summary>Pergunta 1?</summary>
-                <p>Resposta pergunta: conteúdo escondido que aparece quando clicamos no título. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <summary>
+                    <span>Pergunta 1?</span>
+
+                    <span class="accordion__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </span>
+                </summary>
+
+                <p>Resposta pergunta: conteúdo escondido que aparece quando click no título. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </details>
+
             <details class="accordion">
-                <summary>Pergunta 2 </summary>
-                <p>Resposta pergunta: conteúdo escondido que aparece quando clicamos no título. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <summary>
+                    <span>Pergunta 2?</span>
+
+                    <span class="accordion__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </span>
+                </summary>
+
+                <p>Resposta pergunta: conteúdo escondido que aparece quando click no título. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </details>
+
             <details class="accordion">
-                <summary>Pergunta 3</summary>
-                <p>Resposta pergunta: conteúdo escondido que aparece quando clicamos no título. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <summary>                    
+                    <span>Pergunta 3?</span>
+
+                    <span class="accordion__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </span>
+                </summary>
+
+                <p>Resposta pergunta: conteúdo escondido que aparece quando click no título. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </details>
+        </div>
+    </div>
+
+    <div class="modal" id="modal" hidden>
+        <div class="modal__backdrop" onclick="closeModal('modal')"></div>
+        <div class="modal__content">
+            <div class="modal__content__header">
+                <h2>Olá, eu sou o componente modal</h2>
+            </div>
+            <div class="modal__content__body">
+                <p>Os modais concentram a atenção do usuário exclusivamente em uma tarefa ou informação por meio de uma janela que fica no topo do conteúdo da página. Busque ser objetivo e claro na informação</p>
+            </div>
+            <div class="modal__content__footer">
+                <button onclick="closeModal('modal')">Fechar modal</button>
+            </div>
         </div>
     </div>
 </body>
